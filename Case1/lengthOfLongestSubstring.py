@@ -4,7 +4,7 @@ class Solution:
         # enumerate iteration give index and value at the time
         for index, value in enumerate(s):
             # Check index not equals last index to intercept index out of bound
-            # Compare current value and next value, if equal reset count to 0
+            # Check current value with next value, if equal reset count to 0
             if index != len(s) - 1 and value == s[index + 1]:
                 # Set count as longestCount value if count greater than longestCount
                 longestCount = count if count > longestCount else longestCount
