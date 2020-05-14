@@ -1,12 +1,14 @@
 class Solution:
     def lenthOfLongestSubstring(self, s: str) -> int:
         count, longestCount = 0, 0
-        for k, v in enumerate(s):
+        # enumerate iteration give index and value at the time
+        for key, value in enumerate(s):
             # Check index not equals last index to intercept index out of bound
             # Check current value with next value, if equal reset count to 0
-            if k != len(s) - 1 and v == s[k + 1]:
+            if key != len(s) - 1 and value == s[key + 1]:
                 # Set count as longestCount value if count greater than longestCount
                 longestCount = count if count > longestCount else longestCount
+                # Reset count if current value equal with next value
                 count = 0
             count += 1
         return longestCount
