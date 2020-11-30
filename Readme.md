@@ -5,3 +5,4 @@ Repository yang berisi solusi dari daily problem yang di bagikan di group telegr
 ## Problem Credit
 
 - [Daily Interview Pro](https://www.techseries.dev/daily)
+- [LeetCode](https://leetcode.com/)
